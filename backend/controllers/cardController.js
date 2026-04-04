@@ -8,7 +8,7 @@ exports.getCards = async (req, res) => {
    JOIN "cardsOfUser" c ON f.id = c."flashcardId"
    JOIN users u ON c."userId" = u.id
    WHERE u.username = $1`,
-      ["system_guest"],
+      ['system_guest'],
     );
 
     res.json(rows);
