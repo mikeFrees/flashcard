@@ -1,0 +1,28 @@
+.aside {
+  padding: var(--spacing-300);
+
+  border: 1px solid var(--color-neutral-900);
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-radius: var(--radius-16);
+
+  background: var(--color-neutral-0);
+
+  display: flex;
+  gap: var(--spacing-200);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: fit-content;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: var(--spacing-250);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

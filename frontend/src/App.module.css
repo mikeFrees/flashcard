@@ -1,0 +1,46 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: var(--spacing-400);
+  margin: var(--spacing-300) var(--spacing-1300) var(--spacing-0);
+}
+
+@media (max-width: 768px) {
+  .appContainer {
+    gap: var(--spacing-300);
+    margin: var(--spacing-250) var(--spacing-400) var(--spacing-800);
+  }
+}
+
+@media (max-width: 480px) {
+  .appContainer {
+    margin: var(--spacing-200) var(--spacing-200) var(--spacing-500);
+  }
+}
+
+.appMainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: var(--spacing-400);
+}
+
+@media (max-width: 768px) {
+  .appMainContent {
+    gap: var(--spacing-300);
+    flex-direction: column;
+  }
+}
+
+/* 
+phone breakpoint
+@media (max-width: 480px) {
+  .appMainContent {
+
+  }
+} */

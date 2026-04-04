@@ -1,0 +1,130 @@
+.flashcard {
+  border: 1px solid var(--color-neutral-900);
+  border-left: none;
+  border-right: none;
+  padding: var(--spacing-250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-250);
+}
+
+.questionCard {
+  position: relative;
+  width: 776px;
+  height: 360px;
+  background: var(--color-pink-400);
+  padding: var(--spacing-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-200);
+  border-radius: var(--radius-16);
+  border: 2px solid var(--color-neutral-900);
+  box-shadow: 2px 2px 0px var(--color-neutral-900);
+    cursor: pointer;
+}
+
+.questionCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.answer {
+  background: var(--color-blue-400);
+}
+
+.starRight {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+}
+
+.starLeft {
+  position: absolute;
+  bottom: 52px;
+  left: 28px;
+}
+
+.category {
+  width: fit-content;
+  height: fit-content;
+  padding: var(--spacing-75) var(--spacing-150);
+  border-radius: var(--radius-full);
+  background: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-900);
+  box-shadow: 1px 1px 0px #000;
+}
+
+.progressBarContainer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+}
+
+.progressBar {
+  width: 60px;
+  height: 8px;
+  border: 1px solid var(--color-neutral-900);
+  border-radius: var(--radius-full);
+  background: var(--color-neutral-0);
+}
+
+.progressBarFill {
+  background: var(--color-neutral-900);
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-full);
+}
+
+.button {
+  padding: var(--spacing-150) var(--spacing-250);
+  background: var(--color-neutral-0);
+  color: var(--color-neutral-900);
+  border-radius: var(--radius-full);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-neutral-900);
+  box-shadow: 2px 2px 0px var(--color-neutral-900);
+  gap: var(--spacing-100);
+  cursor: pointer;
+}
+
+.buttonGold {
+  background: var(--color-yellow-500);
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-250);
+}
+
+.logo {
+  width: var(--spacing-200);
+  height: var(--spacing-200);
+}
+
+.mastered {
+  display: flex;
+  background: var(--color-teal-400);
+  border: 1px solid var(--color-neutral-900);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-75) var(--spacing-150);
+  gap: var(--spacing-75);
+  box-shadow: 1px 1px 0px var(--color-neutral-900);
+}

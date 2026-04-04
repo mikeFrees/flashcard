@@ -1,0 +1,116 @@
+:root {
+  color: var(--color-neutral-900);
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--font-base);
+}
+
+.text-preset-1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+
+//tablet
+@media (max-width: 768px) {
+  .text-preset-1 {
+    font-size: 2rem;
+  }
+}
+
+//phone
+@media (max-width: 480px) {
+  .text-preset-1 {
+    font-size: 1.5rem;
+  }
+}
+
+.text-preset-2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+
+.text-preset-3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+
+.text-preset-4-semibold {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+.text-preset-4-medium {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+.text-preset-4-regular {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+
+.text-preset-5 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+
+.text-preset-5-regular {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+
+.text-preset-6 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
