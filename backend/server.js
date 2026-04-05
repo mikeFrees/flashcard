@@ -10,7 +10,11 @@ const userRoutes = require("./routes/user");
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "http://freesmike.com",
+      "http:/www.freesmike.com",
+    ],
     methods: ["GET", "POST"],
   }),
 );
