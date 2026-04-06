@@ -13,10 +13,10 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://freesmike.com",
-      "http:/www.freesmike.com",
+      "http://www.freesmike.com",
       "https://localhost:5173",
       "https://freesmike.com",
-      "https:/www.freesmike.com",
+      "https://www.freesmike.com",
     ],
     methods: ["GET", "POST"],
   }),
