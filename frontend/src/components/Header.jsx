@@ -1,9 +1,14 @@
 import styles from "@/components/Header.module.css";
 import LogoLarge from "@/assets/images/logo-large.svg";
 import LogoSmall from "@/assets/images/logo-small.svg";
+import IconUser from "@/assets/icons/icon-user.svg";
 import PageSelector from "@/components/PageSelector";
+import UserForm from "@/components/userForm";
+import { useState } from "react";
 
 function Header({ setStudy, study }) {
+
+  const [userFormVisible, setUserFormVisible] = useState(false);
   return (
     <header className={`${styles.header}`}>
       <picture>
@@ -17,48 +22,19 @@ function Header({ setStudy, study }) {
         />
       </picture>
 
-      <form>
-        <h1>Hello Guest</h1>
-        <input
-          id='username'
-          type='text'
-          placeholder='username'
-        />
-        <input
-          id='password'
-          type='password'
-          placeholder='password'
-        />
-        <button>Login</button>
-      </form>
-      <form>
-        <h1>Hello Guest</h1>
-        <input
-          id='username'
-          type='text'
-          placeholder='Username'
-        />
-        <input
-          id='password'
-          type='password'
-          placeholder='Password'
-        />
-        <input
-          id='confirmPassword'
-          type='password'
-          placeholder='Confirm password'
-        />
-        <input
-          id='email'
-          type='email'
-          placeholder='Email'
-        />
-        <button>Register</button>
-      </form>
       <PageSelector
         setStudy={setStudy}
         study={study}
       />
+
+      <img
+        className={styles.user}
+        src={IconUser}
+        alt='user icon'
+        onClick={() => setUserFormVisible(!userFormVisible)}
+      />
+
+      {userFormVisible && <UserForm />}
     </header>
   );
 }
