@@ -33,6 +33,7 @@ function CardCreationForm() {
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
         placeholder='e.g. What is the capital of France?'
+        className={styles.input}
       ></input>
       <label htmlFor='answer'>Answer</label>
       <input
@@ -41,6 +42,7 @@ function CardCreationForm() {
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         placeholder='e.g. Paris'
+        className={styles.input}
       ></input>
       <label htmlFor='category'>Category</label>
       <input
@@ -49,9 +51,10 @@ function CardCreationForm() {
         value={category}
         onChange={(e) => setCategory(e.target.value)}
         placeholder='e.g. Geography'
+        className={styles.input}
       ></input>
 
-      <button>
+      <button className={styles.button}>
         <img
           src={addLogo}
           alt='plus sign in circle'
