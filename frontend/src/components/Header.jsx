@@ -3,7 +3,7 @@ import LogoLarge from "@/assets/images/logo-large.svg";
 import LogoSmall from "@/assets/images/logo-small.svg";
 import IconUser from "@/assets/icons/icon-user.svg";
 import PageSelector from "@/components/PageSelector";
-import UserForm from "@/components/userForm";
+import UserForm from "@/components/UserForm";
 import { useState } from "react";
 
 function Header({ setStudy, study }) {
