@@ -6,4 +6,5 @@
   flex-direction: column;
   justify-content: space-around;
   padding: var(--spacing-0) var(--spacing-1300);
+  gap: var(--spacing-400);
 }

@@ -89,6 +89,7 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-250);
+  width: 100%;
 }
 
 .mastered {
