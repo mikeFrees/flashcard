@@ -26,35 +26,50 @@ function CardCreationForm() {
       className={styles.form}
       onSubmit={handleSubmit}
     >
-      <label htmlFor='question'>Question</label>
+      <label
+        htmlFor='question'
+        className='text-preset-4-medium'
+      >
+        Question
+      </label>
       <input
         id='question'
         type='text'
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
         placeholder='e.g. What is the capital of France?'
-        className={styles.input}
+        className={`text-preset-4-regular ${styles.input}`}
       ></input>
-      <label htmlFor='answer'>Answer</label>
+      <label
+        htmlFor='answer'
+        className='text-preset-4-medium'
+      >
+        Answer
+      </label>
       <input
         id='answer'
         type='text'
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
         placeholder='e.g. Paris'
-        className={styles.input}
+        className={`text-preset-4-regular ${styles.input}`}
       ></input>
-      <label htmlFor='category'>Category</label>
+      <label
+        htmlFor='category'
+        className='text-preset-4-medium'
+      >
+        Category
+      </label>
       <input
         id='category'
         type='text'
         value={category}
         onChange={(e) => setCategory(e.target.value)}
         placeholder='e.g. Geography'
-        className={styles.input}
+        className={`text-preset-4-regular ${styles.input}`}
       ></input>
 
-      <button className={styles.button}>
+      <button className={`text-preset-4-semibold ${styles.button}`}>
         <img
           src={addLogo}
           alt='plus sign in circle'

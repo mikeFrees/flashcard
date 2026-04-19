@@ -31,6 +31,7 @@ function Header({ setStudy, study }) {
         className={styles.user}
         src={IconUser}
         alt='user icon'
+        id='login'
         onClick={() => setUserFormVisible(!userFormVisible)}
       />
 

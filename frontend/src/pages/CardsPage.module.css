@@ -1,0 +1,9 @@
+.mainPage {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--spacing-0) var(--spacing-1300);
+}
