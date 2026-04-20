@@ -5,11 +5,11 @@ import styles from "@/pages/CardsPage.module.css";
 
 function CardsPage() {
   return (
-    <main className={styles.mainPage}>
+    <section className={styles.mainPage}>
       <CardCreationForm />
       <FlashcardFilter />
       <FlashcardsPreview />
-    </main>
+    </section>
   );
 }
 
