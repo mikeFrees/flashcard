@@ -13,8 +13,10 @@ function FlashcardEditable({ card }) {
         {card.answer}
       </p>
       <div className={`${styles.details} text-preset-5`}>
-        <div className={`${styles.category} text-preset-6`}>{card.category}</div>
-        <div>
+        <div className={`${styles.category} text-preset-6`}>
+          {card.category}
+        </div>
+        <div className={`${styles.bar}`}>
           {card.knownCount === 5 ? (
             <p className={`${styles.mastered} text-preset-6`}>
               <img
